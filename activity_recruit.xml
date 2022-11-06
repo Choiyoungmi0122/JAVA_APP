@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recruitActivity">
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="71dp"
+        android:layout_height="36dp"
+        android:text="삭제"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="71dp"
+        android:layout_height="36dp"
+        android:text="닫기"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="71dp"
+        android:layout_height="36dp"
+        android:text="수정"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="71dp"
+        android:layout_height="36dp"
+        android:text="수정"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="289dp"
+        android:layout_height="22dp"
+        android:text="제목을 적어주세요"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="331dp"
+        android:layout_height="298dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
