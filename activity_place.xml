@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceActivity">
+    <!-- 텍스트뷰 중앙정렬 기능 = android:gravity="center" -->
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="171dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="장소게시판"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="22dp"
+        android:text="행복기숙사"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/subplace_btn1"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="정보관"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn2"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn3"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="수덕전"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn4"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="17dp"
+        android:text="효민기숙사"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn2" />
+
+    <Button
+        android:id="@+id/subplace_btn7"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="제1인문관"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn8"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn9"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="제2인문관"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn10"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn11"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="국제"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn12"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn12"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn13"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="효민축구장"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn14"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn14"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn15"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="효민체육관"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn16"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn5"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="21dp"
+        android:text="지천관"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subplace_btn6"
+        app:layout_constraintEnd_toStartOf="@+id/subplace_btn6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subplace_btn6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="17dp"
+        android:text="공대"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn5"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn4" />
+
+    <Button
+        android:id="@+id/subplace_btn8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="23dp"
+        android:text="지천관"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn7"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn6" />
+
+    <Button
+        android:id="@+id/subplace_btn10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="20dp"
+        android:text="상경관"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn9"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn8" />
+
+    <Button
+        android:id="@+id/subplace_btn12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="20dp"
+        android:text="법정관"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn11"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn10" />
+
+    <Button
+        android:id="@+id/subplace_btn14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="18dp"
+        android:text="생활과학관"
+        app:layout_constraintBottom_toTopOf="@+id/subplace_btn16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn13"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn12" />
+
+    <Button
+        android:id="@+id/subplace_btn16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="87dp"
+        android:text="음악관"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subplace_btn15"
+        app:layout_constraintTop_toBottomOf="@+id/subplace_btn14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
