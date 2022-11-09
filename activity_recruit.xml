@@ -9,42 +9,62 @@
     <Button
         android:id="@+id/button6"
         android:layout_width="85dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:text="삭제"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="85dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:text="닫기"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="85dp"
         android:layout_height="43dp"
         android:text="수정"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="87dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:text="등록"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
 
     <EditText
         android:id="@+id/textView4"
-        android:layout_width="243dp"
-        android:layout_height="388dp"
+        android:layout_width="314dp"
+        android:layout_height="329dp"
         android:text="주문할 배달음식을 적어주세요."
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="316dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
 
     <TextView
         android:id="@+id/date_view1"
@@ -52,8 +72,12 @@
         android:layout_height="30dp"
         android:gravity="center"
         android:text="날짜 칸"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/place_view1"
@@ -61,17 +85,24 @@
         android:layout_height="43dp"
         android:gravity="center"
         android:text="장소 칸"
-        tools:layout_editor_absoluteX="284dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
 
     <Spinner
         android:id="@+id/spiner1"
         android:layout_width="95dp"
         android:layout_height="30dp"
-        android:entries="@array/test"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/textView5"
@@ -79,31 +110,47 @@
         android:layout_height="30dp"
         android:gravity="center"
         android:text="총 인원 :"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
     <Button
         android:id="@+id/rider_time"
         android:layout_width="115dp"
         android:layout_height="43dp"
         android:text="시킬시간"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
 
     <CheckBox
         android:id="@+id/together_box"
         android:layout_width="60dp"
-        android:layout_height="25dp"
+        android:layout_height="48dp"
         android:text="같이"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
 
     <CheckBox
         android:id="@+id/solo_box"
         android:layout_width="60dp"
-        android:layout_height="25dp"
+        android:layout_height="48dp"
         android:text="따로"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
