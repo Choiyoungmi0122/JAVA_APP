@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".loginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/symbol"
+        android:translationY="40dp" />
+
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="E-mail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:translationX="10dp"
+        android:translationY="50dp" />
+
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="password"
+        android:translationX="10dp"
+        android:translationY="70dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="로그인"
+        android:textColor="#FAF9F9"
+        android:translationX="154dp"
+        android:translationY="165dp" />
+    <!--        android:text="0r" -->
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:text="회원가입"
+        android:textColor="#000000"
+        android:translationY="170dp" />
+
+
+<!--    <Button-->
+<!--        android:layout_width="247dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="회원가입" />-->
+
+
+</LinearLayout>
