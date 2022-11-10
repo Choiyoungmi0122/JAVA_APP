@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, loginActivity.class); //activity에 대한 화면전환 객체
-                intent.putExtra("str", email);
                 startActivity(intent); //액티비티 이동
             }
         });
