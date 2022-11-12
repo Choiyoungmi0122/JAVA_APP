@@ -8,6 +8,8 @@
     <!-- 텍스트뷰 중앙정렬 기능 = android:gravity="center" -->
     <!-- xml파일 연동 android:entries="@array/test"-->
 
+
+    
     <EditText
         android:id="@+id/edit"
         android:layout_width="0dp"

@@ -2,6 +2,7 @@ package com.example.four_team;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,9 @@ import com.google.android.material.textfield.TextInputEditText;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
+
+    SQLiteDatabase newDB;
+
 //    private Button recruit_btn; //모집하기 버튼 ID
 //    private Button place_btn; // 장소게시판 버튼 ID
 //    private Button freeboard_btn; //자유게시판 버튼 ID

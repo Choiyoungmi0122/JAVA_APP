@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "771032584242",
+    "project_id": "four-team",
+    "storage_bucket": "four-team.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771032584242:android:bca2762ea3860c5a002c2b",
+        "android_client_info": {
+          "package_name": "com.example.four_team"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771032584242-6h4siqmvolnl67mhrp3cgjq3ipp12i69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1pW0IFFUlmEifdsC4nhSviUoGA9Xz1Js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771032584242-6h4siqmvolnl67mhrp3cgjq3ipp12i69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
