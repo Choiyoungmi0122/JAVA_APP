@@ -1,24 +1,27 @@
 package com.example.four_team;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.firebase.auth.ActionCodeSettings;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-
-    SQLiteDatabase newDB;
-
 //    private Button recruit_btn; //모집하기 버튼 ID
 //    private Button place_btn; // 장소게시판 버튼 ID
 //    private Button freeboard_btn; //자유게시판 버튼 ID
@@ -83,4 +86,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+//    ActionCodeSettings actionCodeSettings =
+//            ActionCodeSettings.newBuilder()
+//                    // URL you want to redirect back to. The domain (www.examp%le.com) for this
+//                    // URL must be whitelisted in the Firebase Console.
+//                    .setUrl("https://www.example.com/finishSignUp?cartId=1234")
+//                    // This must be true
+//                    .setHandleCodeInApp(true)
+//                    .setIOSBundleId("com.example.ios")
+//                    .setAndroidPackageName(
+//                            "com.example.android",
+//                            true, /* installIfNotAvailable */
+//                            "12"    /* minimumVersion */)
+//                    .build();
+//
+//    FirebaseAuth auth = FirebaseAuth.getInstance();
+//    auth.sendSignInLinkToEmail(email, actionCodeSettings)
+//            .addOnCompleteListener(new OnCompleteListener<Void>() {
+//        @Override
+//        public void onComplete(@NonNull Task<Void> task) {
+//            if (task.isSuccessful()) {
+//                Log.d(TAG, "Email sent.");
+//            }
+//        }
+//    });
+
 }

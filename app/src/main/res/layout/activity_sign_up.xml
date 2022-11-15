@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
     tools:context=".SignUpActivity">
+
 
 
     <LinearLayout
@@ -196,7 +198,7 @@
                     android:layout_height="40dp"
                     android:layout_marginBottom="20dp"
                     android:ems="10"
-                    android:hint=" 비밀번호"
+                    android:hint=" 비밀번호(6자이상)"
                     android:inputType="textPassword"
                     android:text="" />
 
