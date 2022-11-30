@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,18 +20,34 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.regex.Pattern;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.regex.Pattern;
 
 public class SignUpActivity extends AppCompatActivity {
 
     private FirebaseAuth mFirebaseAuth;     //파이어베이스 인증처리
     private DatabaseReference mDatabaseRef;   //실시간 데이터베이스
-    private EditText  et_email, et_pw, et_pw2;      //회원가입 입력필드
+    private EditText  et_email;
+    private EditText et_pw, et_pw2;      //회원가입 입력필드
     private Button pwcheck, submit, codecom, cert;      //비밀번호 같은지확인, 회원가입버튼, 인증코드버튼, 이메일 인증보내는 버튼
+
+    // 비밀번호 정규식
+    private static final Pattern PASSWORD_PATTERN = Pattern.compile("^[a-zA-Z0-9!@.#$%^&*?_~]{4,16}$");
+
+    // 파이어베이스 인증 객체 생성
+    private FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        //파이어베이스 인증객체 선언
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("fourteam");       //"앱이름"
 
@@ -55,10 +72,11 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //회원가입버튼누르면  회원가입 처리 시작
-//                String strname = submit.getText().toString();
                 String stremail = et_email.getText().toString().trim();
+
                 String strpw = et_pw.getText().toString().trim();
 
+                stremail= stremail + "@office.deu.ac.kr";
                 //Firebase Auth 진행
                 mFirebaseAuth.createUserWithEmailAndPassword(stremail, strpw).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override

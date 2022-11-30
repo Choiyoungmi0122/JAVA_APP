@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <!-- 텍스트뷰 중앙정렬 기능 = android:gravity="center" -->
     <!-- xml파일 연동 android:entries="@array/test"-->
 

@@ -83,62 +83,38 @@
 
                     <EditText
                         android:id="@+id/et_signEmail"
-                        android:layout_width="wrap_content"
+                        android:layout_width="105dp"
                         android:layout_height="40dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="15dp"
                         android:ems="10"
                         android:hint=" 이메일"
                         android:inputType="textEmailAddress"
                         android:text="" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="@office.deu.ac.kr"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="25dp"
                         android:text="인증"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
-                </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:text="인증코드"
-                    android:textColor="#1163CA"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/et_signcodetext_confirm"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginBottom="20dp"
-                        android:ems="10"
-                        android:hint="인증코드"
-                        android:text="" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="확인"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
                 </LinearLayout>
 
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="15dp"
                     android:text="생년월일"
                     android:textColor="#1163CA"
                     android:textSize="20dp"
@@ -153,7 +129,7 @@
                         android:id="@+id/et_signBirth"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="15dp"
                         android:layout_marginBottom="20dp"
                         android:ems="10"
                         android:hint=" 년(4자)"
@@ -164,7 +140,7 @@
                         android:id="@+id/et_signBirth2"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="15dp"
                         android:layout_marginBottom="20dp"
                         android:ems="10"
                         android:hint=" 월(2자)"

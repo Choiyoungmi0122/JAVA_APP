@@ -15,13 +15,6 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.ActionCodeSettings;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 //    private Button recruit_btn; //모집하기 버튼 ID
@@ -89,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
         });
     
     }
-
 
 
 

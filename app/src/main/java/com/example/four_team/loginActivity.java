@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,8 +47,8 @@ public class loginActivity extends AppCompatActivity
             public void onClick(View view) {
                 //로그인요청
                 String stremail = et_email.getText().toString();
-                String strpw = et_pw.getText().toString();
 
+                String strpw = et_pw.getText().toString();
 
                 mFirebaseAuth.signInWithEmailAndPassword(stremail, strpw).addOnCompleteListener(loginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
