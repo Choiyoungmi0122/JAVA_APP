@@ -15,6 +15,9 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.ActionCodeSettings;
+import com.google.firebase.auth.FirebaseAuth;
+
 
 public class MainActivity extends AppCompatActivity {
 //    private Button recruit_btn; //모집하기 버튼 ID
@@ -82,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
         });
     
     }
-
-
-
 
 //    ActionCodeSettings actionCodeSettings =
 //            ActionCodeSettings.newBuilder()

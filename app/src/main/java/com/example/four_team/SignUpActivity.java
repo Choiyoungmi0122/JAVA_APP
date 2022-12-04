@@ -1,5 +1,7 @@
 package com.example.four_team;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +16,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.ActionCodeSettings;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -77,28 +80,81 @@ public class SignUpActivity extends AppCompatActivity {
                 String strpw = et_pw.getText().toString().trim();
 
                 stremail= stremail + "@office.deu.ac.kr";
+
+
+                ActionCodeSettings actionCodeSettings =
+                        ActionCodeSettings.newBuilder()
+                                // URL you want to redirect back to. The domain (www.example.com) for this
+                                // URL must be whitelisted in the Firebase Console.
+                                .setUrl("firebase-adminsdk-be4so@four-team.iam.gserviceaccount.com")
+                                // This must be true
+                                .setHandleCodeInApp(true)
+                                .setIOSBundleId("com.example.ios")
+                                .setAndroidPackageName(
+                                        "com.example.android",
+                                        true, /* installIfNotAvailable */
+                                        "12"    /* minimumVersion */)
+                                .build();
+
+
+                FirebaseAuth auth = FirebaseAuth.getInstance();
+                auth.sendSignInLinkToEmail(stremail, actionCodeSettings)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    Log.d(TAG, "Email sent.");
+                                }
+                            }
+                        });
+                Intent intent = getIntent();
+
+// Confirm the link is a sign-in with email link.
+                if (mFirebaseAuth.isSignInWithEmailLink(stremail)) {
+                    // Retrieve this from wherever you stored it
+                    String email = "noreply@four-team.firebaseapp.com";
+
+                    // The client SDK will parse the code from the link for you.
+                    mFirebaseAuth.signInWithEmailLink(email, stremail)
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        Log.d(TAG, "Successfully signed in with email link!");
+                                        AuthResult result = task.getResult();
+                                        // You can access the new user via result.getUser()
+                                        // Additional user info profile *not* available via:
+                                        // result.getAdditionalUserInfo().getProfile() == null
+                                        // You can check if the user is new or existing:
+                                        // result.getAdditionalUserInfo().isNewUser()
+                                    } else {
+                                        Log.e(TAG, "Error signing in with email link", task.getException());
+                                    }
+                                }
+                            });
+                }
                 //Firebase Auth 진행
-                mFirebaseAuth.createUserWithEmailAndPassword(stremail, strpw).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {       //회원가입이 성공했을 때
-                        if (task.isSuccessful()) {
-                            FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
-                            UserAccount account = new UserAccount();
-                            account.setIdToken(firebaseUser.getUid());
-                            account.setEmailI(firebaseUser.getEmail());
-                            account.setPassword(strpw);
-
-                            //setValue : database 에 insert 행위
-                            mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
-
-                            Toast.makeText(SignUpActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
-
-                        } else {
-                            Toast.makeText(SignUpActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
-
-                        }
-                    }
-                });
+//                mFirebaseAuth.createUserWithEmailAndPassword(stremail, strpw).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {       //회원가입이 성공했을 때
+//                        if (task.isSuccessful()) {
+//                            FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
+//                            UserAccount account = new UserAccount();
+//                            account.setIdToken(firebaseUser.getUid());
+//                            account.setEmailI(firebaseUser.getEmail());
+//                            account.setPassword(strpw);
+//
+//                            //setValue : database 에 insert 행위
+//                            mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
+//
+//                            Toast.makeText(SignUpActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
+//
+//                        } else {
+//                            Toast.makeText(SignUpActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
+//
+//                        }
+//                    }
+//                });
             }
         });
     }
