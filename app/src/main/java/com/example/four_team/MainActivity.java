@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
     
     }
 
+    //이메일 인증에 대한 코드....->위치 애매
 //    ActionCodeSettings actionCodeSettings =
 //            ActionCodeSettings.newBuilder()
 //                    // URL you want to redirect back to. The domain (www.examp%le.com) for this
