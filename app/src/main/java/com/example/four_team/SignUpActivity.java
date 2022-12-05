@@ -108,7 +108,7 @@ public class SignUpActivity extends AppCompatActivity {
                         });
                 Intent intent = getIntent();
 
-// Confirm the link is a sign-in with email link.
+                    // Confirm the link is a sign-in with email link.
                 if (mFirebaseAuth.isSignInWithEmailLink(stremail)) {
                     // Retrieve this from wherever you stored it
                     String email = "noreply@four-team.firebaseapp.com";
