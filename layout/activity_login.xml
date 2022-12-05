@@ -28,29 +28,29 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="125dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="32dp"
         android:background="@null"
         android:src="@drawable/symbol"
         android:translationY="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
         android:id="@+id/et_signEmail"
         android:layout_width="363dp"
         android:layout_height="62dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="28dp"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:translationX="10dp"
         android:translationY="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
         android:id="@+id/et_signPW"
@@ -70,36 +70,30 @@
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
         android:backgroundTint="#2198F3"
-        android:clickable="true"
-        android:onClick="signIn"
         android:text="로그인"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="154dp"
-        android:translationY="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/et_signPW"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_signPW"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_signPW"
+        app:layout_constraintVertical_bias="0.873" />
 
     <Button
         android:id="@+id/login_sign_button"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="248dp"
-        android:background="#00FFFFFF"
-        android:onClick="stratSingup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/white"
         android:text="회원가입"
-        android:textColor="#000000"
-        android:translationY="170dp"
+        android:textColor="#C8050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="1.0" />
 
 
     <!--    <Button-->
