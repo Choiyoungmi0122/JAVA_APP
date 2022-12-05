@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(intent); //액티비티 이동.
 //            }
 //        });
+
         //로그인 버튼에 대한 화면전환
         login_btn = findViewById(R.id.login_btn);
         login_btn.setOnClickListener(new View.OnClickListener() {
