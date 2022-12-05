@@ -37,7 +37,7 @@ public class SignUpActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseRef;   //실시간 데이터베이스
     private EditText  et_email;
     private EditText et_pw, et_pw2;      //회원가입 입력필드
-    private Button pwcheck, submit, codecom, cert;      //비밀번호 같은지확인, 회원가입버튼, 인증코드버튼, 이메일 인증보내는 버튼
+    private Button pwcheck, submit, cert;      //비밀번호 같은지확인, 회원가입버튼, 이메일 인증보내는 버튼
 
     // 비밀번호 정규식
     private static final Pattern PASSWORD_PATTERN = Pattern.compile("^[a-zA-Z0-9!@.#$%^&*?_~]{4,16}$");
@@ -80,7 +80,6 @@ public class SignUpActivity extends AppCompatActivity {
                 String strpw = et_pw.getText().toString().trim();
 
                 stremail= stremail + "@office.deu.ac.kr";
-
 
                 ActionCodeSettings actionCodeSettings =
                         ActionCodeSettings.newBuilder()
@@ -134,27 +133,27 @@ public class SignUpActivity extends AppCompatActivity {
                             });
                 }
                 //Firebase Auth 진행
-//                mFirebaseAuth.createUserWithEmailAndPassword(stremail, strpw).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {       //회원가입이 성공했을 때
-//                        if (task.isSuccessful()) {
-//                            FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
-//                            UserAccount account = new UserAccount();
-//                            account.setIdToken(firebaseUser.getUid());
-//                            account.setEmailI(firebaseUser.getEmail());
-//                            account.setPassword(strpw);
-//
-//                            //setValue : database 에 insert 행위
-//                            mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
-//
-//                            Toast.makeText(SignUpActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
-//
-//                        } else {
-//                            Toast.makeText(SignUpActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
-//
-//                        }
-//                    }
-//                });
+                mFirebaseAuth.createUserWithEmailAndPassword(stremail, strpw).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {       //회원가입이 성공했을 때
+                        if (task.isSuccessful()) {
+                            FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
+                            UserAccount account = new UserAccount();
+                            account.setIdToken(firebaseUser.getUid());
+                            account.setEmailI(firebaseUser.getEmail());
+                            account.setPassword(strpw);
+
+                            //setValue : database 에 insert 행위
+                            mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
+
+                            Toast.makeText(SignUpActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
+
+                        } else {
+                            Toast.makeText(SignUpActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
+
+                        }
+                    }
+                });
             }
         });
     }
