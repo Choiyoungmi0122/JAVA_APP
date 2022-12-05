@@ -21,8 +21,8 @@
             android:gravity="center"
             android:paddingTop="2dp"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textStyle="normal"
             tools:text="배달시간" />
 
         <!-- 제목 -->
@@ -34,7 +34,7 @@
             android:gravity="center"
             android:paddingTop="2dp"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:textStyle="normal"
             tools:text="제목" />
 
@@ -48,7 +48,7 @@
             android:gravity="center"
             android:paddingTop="2dp"
             android:textColor="#7A000000"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:textStyle="normal"
             tools:text="총 인원" />
 
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#8D000000"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="normal" />
 
     </LinearLayout>

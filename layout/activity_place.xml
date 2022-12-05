@@ -24,8 +24,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="366dp"
-        android:layout_height="690dp"
+        android:layout_width="340dp"
+        android:layout_height="600dp"
         android:foreground="@drawable/edge"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,11 +38,11 @@
 
     <Button
         android:id="@+id/place_btn1"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="정보관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.077"
@@ -52,11 +52,11 @@
 
     <Button
         android:id="@+id/place_btn2"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="행복기숙사"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.918"
@@ -66,11 +66,11 @@
 
     <Button
         android:id="@+id/place_btn4"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="효민기숙사"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"
@@ -80,11 +80,11 @@
 
     <Button
         android:id="@+id/place_btn3"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="수덕전"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.072"
@@ -94,11 +94,11 @@
 
     <Button
         android:id="@+id/place_btn7"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="제1인문관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.077"
@@ -108,11 +108,11 @@
 
     <Button
         android:id="@+id/place_btn8"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="지천관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"
@@ -122,11 +122,11 @@
 
     <Button
         android:id="@+id/place_btn9"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="제2인문관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.077"
@@ -136,11 +136,11 @@
 
     <Button
         android:id="@+id/place_btn10"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="상경관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"
@@ -150,11 +150,11 @@
 
     <Button
         android:id="@+id/place_btn11"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="국제"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.077"
@@ -164,11 +164,11 @@
 
     <Button
         android:id="@+id/place_btn12"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="법정관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"
@@ -178,11 +178,11 @@
 
     <Button
         android:id="@+id/place_btn13"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="효민축구장"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.077"
@@ -192,11 +192,11 @@
 
     <Button
         android:id="@+id/place_btn15"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="효민체육관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.077"
@@ -206,11 +206,11 @@
 
     <Button
         android:id="@+id/place_btn16"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="음악관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"
@@ -220,11 +220,11 @@
 
     <Button
         android:id="@+id/place_btn14"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="생활과학관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"
@@ -234,11 +234,11 @@
 
     <Button
         android:id="@+id/place_btn5"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="지천관"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.072"
@@ -248,11 +248,11 @@
 
     <Button
         android:id="@+id/place_btn6"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:backgroundTint="#2198F3"
         android:text="공대"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.922"

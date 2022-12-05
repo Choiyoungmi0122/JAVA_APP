@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:backgroundTint="#2198F3"
         android:gravity="center"
-        android:textSize="40sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/recyler_place"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyler_place"
-        android:layout_width="356dp"
-        android:layout_height="645dp"
+        android:layout_width="340dp"
+        android:layout_height="600dp"
         android:foreground="@drawable/edge"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
