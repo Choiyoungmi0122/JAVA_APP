@@ -242,6 +242,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
+                    android:backgroundTint="#2198F3"
                     android:clickable="true"
                     android:onClick="singUp"
                     android:text="회원가입"

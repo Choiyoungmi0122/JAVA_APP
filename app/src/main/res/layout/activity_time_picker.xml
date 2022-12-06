@@ -22,6 +22,7 @@
         android:id="@+id/select_btn"
         android:layout_width="298dp"
         android:layout_height="89dp"
+        android:backgroundTint="#2198F3"
         android:text="배달시간 선택하기"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
