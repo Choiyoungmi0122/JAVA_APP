@@ -22,7 +22,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
 
-
     private Button login_btn; //로그인 버튼 ID
     private Button sign_btn; //회원가입 버튼 ID
 
