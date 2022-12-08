@@ -86,9 +86,6 @@ public class MainActivity extends AppCompatActivity {
         });
     
     }
-
-
-//
 //    FirebaseAuth auth = FirebaseAuth.getInstance();
 //    auth.sendSignInLinkToEmail(email, actionCodeSettings)
 //            .addOnCompleteListener(new OnCompleteListener<Void>() {
