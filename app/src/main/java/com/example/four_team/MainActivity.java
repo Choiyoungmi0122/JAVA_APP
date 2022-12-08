@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
 //                Intent intent = new Intent(MainActivity.this, freeboardActivity.class); //자유게시판 activity에 대한 화면전환 객체
 //            }
-//        });
+
 
         //로그인 버튼에 대한 화면전환
         login_btn = findViewById(R.id.login_btn);
