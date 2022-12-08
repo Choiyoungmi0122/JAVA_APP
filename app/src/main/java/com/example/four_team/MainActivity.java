@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//        public void onComplete(@NonNull Task<Void> task) {
 //            if (task.isSuccessful()) {
 //                Log.d(TAG, "Email sent.");
 //            }
