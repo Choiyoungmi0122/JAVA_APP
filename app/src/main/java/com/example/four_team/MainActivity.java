@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
 
-//        place_btn.setOnClickListener(new View.OnClickListener() {
+
 //            @Override
 //            public void onClick(View view) {
 //                Intent intent = new Intent(MainActivity.this, PlaceActivity.class); //장소게시판 activity에 대한 화면전환 객체
