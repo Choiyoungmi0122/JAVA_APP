@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 
 
-//        freeboard_btn = findViewById(R.id.freeboard_btn);
+
 //            @Override
 //            public void onClick(View view) {
 //                Intent intent = new Intent(MainActivity.this, freeboardActivity.class); //자유게시판 activity에 대한 화면전환 객체
