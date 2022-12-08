@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(intent); //액티비티 이동.
 
 //        });
-//        //장소게시판 버튼에 대한 화면전환
+
 //        place_btn = findViewById(R.id.place_btn);
 //        place_btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
