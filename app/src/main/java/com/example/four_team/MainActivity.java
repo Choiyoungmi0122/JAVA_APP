@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
 //            public void onClick(View view) {
 //                Intent intent = new Intent(MainActivity.this, PlaceActivity.class); //장소게시판 activity에 대한 화면전환 객체
-//                startActivity(intent); //액티비티 이동.
+
 //            }
 //        });
 //        //자유게시판 버튼에 대한 화면전환
