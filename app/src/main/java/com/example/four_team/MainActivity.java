@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity {
-//    private Button recruit_btn; //모집하기 버튼 ID
+
 
 
     private Button login_btn; //로그인 버튼 ID
