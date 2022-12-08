@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //            public void onClick(View view) {
 //                Intent intent = new Intent(MainActivity.this, recruitActivity.class); //모집하기 activity에 대한 화면전환 객체
 //                startActivity(intent); //액티비티 이동.
-//            }
+
 //        });
 //        //장소게시판 버튼에 대한 화면전환
 //        place_btn = findViewById(R.id.place_btn);
