@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 //                Intent intent = new Intent(MainActivity.this, recruitActivity.class); //모집하기 activity에 대한 화면전환 객체
 //                startActivity(intent); //액티비티 이동.
 
-//        });
 
 
 //            public void onClick(View view) {
