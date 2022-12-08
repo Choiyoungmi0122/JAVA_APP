@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        });
 
-//        place_btn = findViewById(R.id.place_btn);
+
 //        place_btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
