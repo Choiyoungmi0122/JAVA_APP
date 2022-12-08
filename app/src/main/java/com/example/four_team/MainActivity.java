@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 //                Intent intent = new Intent(MainActivity.this, PlaceActivity.class); //장소게시판 activity에 대한 화면전환 객체
 
 //            }
-//        });
+
 
 //        freeboard_btn = findViewById(R.id.freeboard_btn);
 //            @Override
