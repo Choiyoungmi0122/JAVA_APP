@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 
 
-
 //                Intent intent = new Intent(MainActivity.this, freeboardActivity.class); //자유게시판 activity에 대한 화면전환 객체
 //                startActivity(intent); //액티비티 이동.
 //            }
