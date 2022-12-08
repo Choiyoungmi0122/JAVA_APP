@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     
     }
 
-//    auth.sendSignInLinkToEmail(email, actionCodeSettings)
+
 //            .addOnCompleteListener(new OnCompleteListener<Void>() {
 //        @Override
 //        public void onComplete(@NonNull Task<Void> task) {
