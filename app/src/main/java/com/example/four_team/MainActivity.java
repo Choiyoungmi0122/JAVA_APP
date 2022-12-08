@@ -87,20 +87,7 @@ public class MainActivity extends AppCompatActivity {
     
     }
 
-    //이메일 인증에 대한 코드....->위치 애매
-//    ActionCodeSettings actionCodeSettings =
-//            ActionCodeSettings.newBuilder()
-//                    // URL you want to redirect back to. The domain (www.examp%le.com) for this
-//                    // URL must be whitelisted in the Firebase Console.
-//                    .setUrl("https://www.example.com/finishSignUp?cartId=1234")
-//                    // This must be true
-//                    .setHandleCodeInApp(true)
-//                    .setIOSBundleId("com.example.ios")
-//                    .setAndroidPackageName(
-//                            "com.example.android",
-//                            true, /* installIfNotAvailable */
-//                            "12"    /* minimumVersion */)
-//                    .build();
+
 //
 //    FirebaseAuth auth = FirebaseAuth.getInstance();
 //    auth.sendSignInLinkToEmail(email, actionCodeSettings)
