@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 //            }
 //        });
-//        //자유게시판 버튼에 대한 화면전환
+
 //        freeboard_btn = findViewById(R.id.freeboard_btn);
 //        freeboard_btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
